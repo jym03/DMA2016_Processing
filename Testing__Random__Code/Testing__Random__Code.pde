@@ -6,14 +6,22 @@
   }
   
   void draw() {
-  if(mousePressed == true) {
+  if(mousePressed && (mouseButton == LEFT)) {
   for (int i = 0; i < width; i++) {
     float r = random(255);
-    stroke(r);
-    rect(i, 0, i, height);
+    stroke(200,r*2,i);
+    rect(i, 0, i, height); }
+  }
+  else if(mousePressed && (mouseButton == RIGHT)) {
+    for (int i = 0; i < width; i++) {
+    float r = random(255);
+    stroke(r,50,i);
+    ellipse(i,i,0, height); }
+    //background(pmouseX/2);
+  }
+  else {
+  background(pmouseX/2);
   }
   }
-  }
-  void mouseReleased() {
-    background(pmouseX/2);
-  }
+  
+    
