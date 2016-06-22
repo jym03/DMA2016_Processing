@@ -21,14 +21,14 @@
   background(255);
   mouseWheel();
   stroke(10);
-  if(e>-3){
+  if(e>-4){
   text("MouseWheel Value=", 117,700);
   text(e,600,700);
   textSize(50);
   }
   else {
   text("MouseWheel Value (off screen) =", 80,700);
-  text(e,925,700);
+  text(e,910,700);
   textSize(50);  
   }
   i++;
