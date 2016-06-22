@@ -21,7 +21,7 @@ int[][] cellsBuffer;
 boolean pause = false;
 
 void setup() {
-  size (1200,800);
+  fullScreen();
 
   // Instantiate arrays 
   cells = new int[width/cellSize][height/cellSize];

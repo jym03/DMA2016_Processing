@@ -1,18 +1,27 @@
   void setup () {
-  size(400,400);
-  face(200,200); 
-  }
+  size(600,600);
+  face(300,300); 
+}
   
   void draw() {
-
-  if(mousePressed)
+  
+  if(mousePressed && (mouseButton == RIGHT))
    {
     fill(0);
     ellipse(mouseX,mouseY,10,10); 
   }
+  if(mousePressed && (mouseButton == LEFT))
+    {
+      face(mouseX,mouseY);
+    }
+  if(keyPressed == true) {
+   background
+   (0,mouseX,mouseY);
+  }
   }
   
   void face(int x, int y) 
+  
   {
   int i=10;
   for(i=10; i>0;i--){
@@ -26,4 +35,4 @@
        fill(255);
     }
   }
-}
+  }

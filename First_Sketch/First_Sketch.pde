@@ -1,6 +1,5 @@
 
-  void setup() {pm
-  
+  void setup() {
   background(255,0,0); 
   size(600,600); 
   strokeWeight(.001); 
@@ -17,8 +16,8 @@
   fill(50,50,255);
   rect(mouseX,mouseY,20,20);
   }
-  else {
-     //background(pmouseX/2,pmouseY/2,20);
+  else if(keyPressed){
+     background(255,0,0);
   }}
   
   void mouseWheel(MouseEvent event) {
