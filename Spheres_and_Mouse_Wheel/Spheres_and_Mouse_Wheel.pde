@@ -21,10 +21,16 @@
   background(255);
   mouseWheel();
   stroke(10);
+  if(e>-3){
   text("MouseWheel Value=", 117,700);
   text(e,600,700);
   textSize(50);
-  
+  }
+  else {
+  text("MouseWheel Value (off screen) =", 80,700);
+  text(e,925,700);
+  textSize(50);  
+  }
   i++;
   if(keyPressed == true && key == '3') {
   translate(e*15,mouseY,50*tan(i*2*PI/180.0));
