@@ -34,11 +34,12 @@ void draw() {
   rect(0, 0, width, height);
   
   if ((frameCount % 5) == 0) {
-    FCircle bolita = new FCircle(random(4,50));
+    FCircle bolita = new FCircle(8);
+    //FCircle bolita = new FCircle(random(4,50));
     bolita.setNoStroke();
     //fill(255);
     bolita.setFill(random(0,255),random(0,255),random(0,255));
-    bolita.setPosition(random(0,600),0);
+    bolita.setPosition(300,0);
     bolita.setVelocity(0, 400);
     bolita.setRestitution(.9);
     bolita.setDamping(0);
