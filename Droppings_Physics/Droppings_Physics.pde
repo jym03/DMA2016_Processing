@@ -24,7 +24,7 @@ void setup() {
   mundo = new FWorld();
   mundo.setGravity(0, 200);
   
-  frameRate(12);
+  frameRate(20);
   background(0);
 }
 
@@ -38,7 +38,7 @@ void draw() {
     //FCircle bolita = new FCircle(random(4,50));
     bolita.setNoStroke();
     //fill(255);
-    bolita.setFill(random(0,255),random(0,255),random(0,255));
+    bolita.setFill(random(0,255),random(0,255),random(0,255),150);
     bolita.setPosition(300,0);
     bolita.setVelocity(0, 400);
     bolita.setRestitution(.9);
