@@ -24,24 +24,24 @@ void setup() {
   mundo = new FWorld();
   mundo.setGravity(0, 200);
   
-  frameRate(20);
-  background(0);
+  frameRate(14);
+  background(150);
 }
 
 void draw() {
   fill(0, 100);
-  noStroke();
+  stroke(255);
   rect(0, 0, width, height);
   
   if ((frameCount % 5) == 0) {
     FCircle bolita = new FCircle(8);
     //FCircle bolita = new FCircle(random(4,50));
-    bolita.setNoStroke();
+    bolita.setStroke(255);
     //fill(255);
-    bolita.setFill(random(0,255),random(0,255),random(0,255),150);
+    bolita.setFill(255,random(0,255),random(0,255),150);
     bolita.setPosition(300,0);
     bolita.setVelocity(0, 400);
-    bolita.setRestitution(.9);
+    bolita.setRestitution(.5);
     bolita.setDamping(0);
     mundo.add(bolita);
   }
