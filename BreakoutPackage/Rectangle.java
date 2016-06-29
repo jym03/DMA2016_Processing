@@ -24,7 +24,7 @@ public class Rectangle {
 
 	public void paint(){
 		p.noStroke();
-		//p.fill(innerColor.getRed(),innerColor.getGreen(),innerColor.getBlue());
+		p.fill(innerColor.getRed(),innerColor.getGreen(),innerColor.getBlue());
 		p.fill(255);
 		p.rect(x, y, width, height);
 	}

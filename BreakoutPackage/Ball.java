@@ -10,6 +10,7 @@ public class Ball {
 	float vx;
 	float vy;
 	float size;
+	float velocity; 
 	int count;
 	Color color;
 	
@@ -20,8 +21,8 @@ public class Ball {
 		size = nsize;
 		color = c;
 		
-		vx = p.random(-8,8);
-		vy = p.random(-8,8);
+		vx = p.random(-7,7);
+		vy = p.random(-7,7);
 	}
 	
 	public void update(){
@@ -37,8 +38,27 @@ public class Ball {
 	}
 	
 	public void paint() {
-		p.noStroke();
+		p.noStroke();	
 		p.fill(color.getRed(), color.getGreen(), color.getBlue());
 		p.ellipse(x, y, size, size);
+	}
+	public void setVelocity(float tempvx,float tempvy){
+		vx = tempvx;
+		vy = tempvy;
+	}
+	public float getX(){
+		return x;
+	}
+	public float getY(){
+		return y;
+	}
+	public float getSize() {
+		return size;
+	}
+	public float getVX() {
+		return vx;
+	}
+	public float getVY() {
+		return vy;
 	}
 }
